@@ -8,7 +8,7 @@ There are several files attached to the repository which include files for Pytho
 
 These files explain:
 
-- Desinging SQL Database
+- Designing SQL Database
 - Using Python to Get System Performance
 - Testing the Application
 - Connecting Power BI to SQL server
