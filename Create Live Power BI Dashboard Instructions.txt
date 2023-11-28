@@ -1,0 +1,53 @@
+Once the Power BI Desktop is connect to the SQL Server DB, all the fields are now available for 
+creating the dashboard
+
+# Creating Measures for Latest Values
+
+Before starting the dashboard, lets create some measures using DAX to calculate the current
+values of CPU usage, memory usage and disk usage.
+
+- In the cpu usage measure we will calculate the value of cpu usage against the latest date and
+time value. We will use the calculate function to extract this value. Use the sum of CPU usage
+as the expression. And the latest date and time value as filter. = The latest cpu usage should
+now be available.
+
+- In the dsik usage measure we will calculate the value of disk usage against the latest data 
+and time value
+
+-Lets calculate the value of the latest memory usage against the latest date and time value. 
+
+# Creating Live Dashboard 
+
+Now that we are directly connected to the sql server db, lets create a dashboard to display the
+system performance information in real time. 
+
+- Lets create a title for the dashboard using the text box visual. 
+
+- Lets Add a gauge visual to display the CPU usage
+- Add the latest cpu usage measure to the values field
+- Add cpu usage field to the minimum value area as minimum 
+- Add the maximum value area as maximum
+- Lets change the title of the gauge visual to the cpu usage
+- Create copies of this and do similar for Disk usage and Memory Usage
+
+- Lets add a line chart to display the bytes sent and received per second 
+- Add bytes received field to the Y axis
+- Add the bytes sent field to the secondary Y axis
+- Add the time field to the X axis
+
+- Lets add a line chart to display the cpu interrupts and cpu calls per second 
+- Add cpu calls field to the Y axis
+- Add the cpu interrupts field to the secondary Y axis
+- Add the time field to the X axis
+
+- Lets add a donut chart to display the memory used and memory free information
+- Add memory free and memory used to the values area
+
+
+Our dashboard is complete, but we will limeit the line charts to display maximum 30 latest items
+
+
+# Test the Final Results
+
+
+
